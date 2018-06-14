@@ -60,6 +60,8 @@ yarn add axios @types/axios
 yarn add -D webpack webpack-cli @types/node @types/webpack
 ```
 
+&nbsp;
+
 ### 使用 Babel 书写配置
 
 #### 安装 Bebel
@@ -115,15 +117,17 @@ yarn add -D @babel/cli @babel/node @babel/register
 }
 ```
 
-#### 用 Prettier 来自动格式化代码
+&nbsp;
 
-##### 安装 Prettier
+### 用 Prettier 来自动格式化代码
+
+#### 安装 Prettier
 
 ```
 yarn add -D prettier prettier-stylelint prettier-tslint
 ```
 
-##### .prettierrc.js
+#### .prettierrc.js
 
 ```javascript
 // https://prettier.io/docs/en/configuration.html
@@ -164,20 +168,52 @@ module.exports = {
 };
 ```
 
-#### 代码检查
+&nbsp;
 
+### 代码检查
+
+#### 安装 ESLint 和 第三方配置
 ```
 yarn add -D eslint babel-eslint eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-flowtype eslint-plugin-react eslint-config-airbnb-base@latest
 ```
 
+#### .eslintrc.js
+
+```javascript
+module.exports = {
+  root: true,
+  parser: 'babel-eslint',
+  plugins: ['import', 'flowtype', 'jsx-a11y', 'react'],
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true,
+    jest: true,
+    node: true
+  },
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+      generators: true,
+      experimentalObjectRestSpread: true
+    }
+  },
+  rules: {}
+}
+```
+
+#### .eslintignore
+
+```
+# https://eslint.org/docs/user-guide/configuring#ignoring-files-and-directories
+
+scripts/*
+dist/*
+```
 
 &nbsp;
-
-### 使用 TypeScript 书写配置
-
-```
-yarn add -D typescript ts-node @types/node @types/webpack
-```
 
 ### 解析应用层
 
@@ -189,73 +225,100 @@ yarn add -D typescript ts-node @types/node @types/webpack
 yarn add -D babel-loader@next @babel/preset-react @babel/plugin-proposal-class-properties @babel/plugin-transform-react-jsx @babel/plugin-transform-react-jsx-source @babel/plugin-transform-react-jsx-self @babel/plugin-proposal-decorators @babel/plugin-transform-destructuring @babel/plugin-proposal-object-rest-spread @babel/plugin-transform-runtime @babel/plugin-transform-regenerator @babel/plugin-syntax-dynamic-import @babel/plugin-transform-parameters
 ```
 
-##### .babelrc
+&nbsp;
 
+### 配置合并
 
-
-##### 代码检查
-
-```
-yarn add -D eslint babel-eslint eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-flowtype eslint-plugin-react eslint-config-airbnb-base
+```bash
+yarn add -D webpack-merge
 ```
 
-#### TypeScript
+### 清理目录
 
-##### 安装 TS Loader
-
-```
-yarn add -D ts-loader
+```bash
+yarn add -D clean-webpack-plugin
 ```
 
-##### 代码检查
+### 复制文件
 
+```bash
+yarn add -D copy-webpack-plugin
 ```
-yarn add -D tslint tslint-react tslint-microsoft-contrib
-```
 
-
-## HTML
+### HTML
 
 ```bash
 yarn add -D html-webpack-plugin add-asset-html-webpack-plugin
 ```
 
-## 开发服务器
+&nbsp;
+
+### 开发服务器
 
 ```bash
 yarn add -D webpack-dev-server webpack-serve
 ```
 
-## 解析样式
+&nbsp;
+
+### 样式处理
+
+#### CSS 样式
 
 ```
 yarn add -D style-loader css-loader postcss-loader postcss
+```
+
+##### PostCSS
+
+.postcssrc.js
+
+```javascript
+// https://github.com/michael-ciniawsky/postcss-load-config
+
+module.exports = {
+  plugins: {
+    'postcss-flexbugs-fixes': {},
+    'postcss-import': {},
+    'autoprefixer': {
+      'browsers': [
+        '> 1%',
+        'last 4 versions',
+        'Firefox ESR',
+        'not ie <= 9'
+      ]
+    }
+  }
+}
+```
+
+#### 扩展样式
+
+```
 yarn add -D less-loader sass-loader stylus-loader less node-sass stylus
 ```
 
-### 抽取样式
+#### 抽取样式
 
 ```
 yarn add -D mini-css-extract-plugin extract-text-webpack-plugin@next
 ```
 
-### 压缩样式
+#### 压缩样式
 
 ```bash
 yarn add -D optimize-css-assets-webpack-plugin uglifyjs-webpack-plugin
 ```
 
-## 文件处理
+&nbsp;
+
+### 文件处理
 
 ```bash
 yarn add -D file-loader url-loader
 ```
 
-## 其它
-
-```
-yarn add -D clean-webpack-plugin copy-webpack-plugin
-```
+&nbsp;
 
 ## 参考
 
@@ -265,17 +328,26 @@ yarn add -D clean-webpack-plugin copy-webpack-plugin
 
 [optimization](https://webpack.js.org/configuration/optimization/)
 
+## 备注
 
 @babel/plugin-proposal-decorators 装饰器
+
 @babel/plugin-transform-destructuring 赋值解构 let { className, children } = this.props;
+
 @babel/plugin-proposal-object-rest-spread 对象扩展运算 { ...props }
+
 @babel/plugin-transform-runtime 垫片
+
 @babel/plugin-transform-regenerator ES6 generator 支持
+
 @babel/plugin-syntax-dynamic-import 动态导入
 
 @babel/proposal-export-default 导出默认 export v from 'xxx'
 
 @babel/plugin-proposal-nullish-coalescing-operator ??操作符
+
 @babel/plugin-proposal-optional-chaining ?.操作符 (Optional Chaining)
+
 @babel/plugin-proposal-pipeline-operator |> 管道操作符 (The Pipeline Operator) https://github.com/tc39/proposal-pipeline-operator
+
 @babel/plugin-transform-parameters 函数参数默认值及扩展运算符
