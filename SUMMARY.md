@@ -12,6 +12,7 @@
         * 2018-06-07 [使用 window.crypto.getRandomValues 取代不案例的 Math.random](文章/开发/前端开发/开发语言/TypeScript/使用%20window.crypto.getRandomValues%20取代不安全的%20Math.random.md)
         * 2018-06-06 [基础类型](文章/开发/前端开发/开发语言/TypeScript/基础类型.md)
       * __JavaScript__
+        * 2018-06-14 [HTML 5 Api 获取位置定位](文章/开发/前端开发/开发语言/JavaScript/HTML%205%20Api%20获取位置定位.md)
         * 2018-05-10 [开始使用新的 CSS Typed Object Model](文章/开发/前端开发/开发语言/JavaScript/开始使用新的%20CSS%20Typed%20Object%20Model.md)
         * 2018-05-10 [作用域](文章/开发/前端开发/开发语言/JavaScript/作用域.md)
       * __HTML & CSS__
@@ -20,6 +21,7 @@
       * __微信小程序__
         * 2018-05-10 [微信小程序添加底部导航](文章/开发/前端开发/前端框架/微信小程序/添加%20topbar.md)
       * __React__
+        * 2018-06-14 [写腻了 ReactDOM.render 来试试这个吧](文章/开发/前端开发/前端框架/React/写腻了%20ReactDOM.render%20来试试这个吧.md)
         * 2018-06-06 [React class 中的事件 4 种使用 this 的方法](文章/开发/前端开发/前端框架/React/React%20class%20中的事件%204%20种使用%20this%20的方法.md)
         * 2018-06-06 [从 antd Menu 学习父组件获取子组件 key 研究](文章/开发/前端开发/前端框架/React/从%20antd%20Menu%20学习父组件获取子组件%20key%20研究.md)
         * 2018-06-06 [16.4.0 生命周期一览和旧的生命周期回顾](文章/开发/前端开发/前端框架/React/16.4.0%20新版生命周期一览和旧的生命周期回顾.md)
@@ -57,6 +59,7 @@
       * 2018-05-10 [修改 commit](文章/开发/开发工具/Git/修改%20commit.md)
       * 2018-05-10 [变更作者](文章/开发/开发工具/Git/变更作者.md)
     * __Webpack__
+      * 2018-06-14 [使用 TypeScript 来书写 Webpack 配置流程.md](文章/开发/开发工具/Webpack/使用%20TypeScript%20来书写%20Webpack%20配置流程.md)
       * 2018-06-10 [分析需求](文章/开发/开发工具/Webpack/需求分析.md)
 * __其它__
   * __音乐__
