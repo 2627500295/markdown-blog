@@ -44,7 +44,7 @@ brew tap homebrew/services
 
 在国内环境, 请使用以下命令安装。
 
-```
+```bash
 brew tap --custom-remote --force-auto-update homebrew/core         https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
 brew tap --custom-remote --force-auto-update homebrew/cask         https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git
 brew tap --custom-remote --force-auto-update homebrew/cask-fonts   https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask-fonts.git
