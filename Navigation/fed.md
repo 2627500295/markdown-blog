@@ -2,6 +2,8 @@
 
 ## 官方网站
 
+- [JS代码性能测试](https://jsperf.com/)
+
 - JavaScript
 
   - [MDN JavaScript 教程](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
