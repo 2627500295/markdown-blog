@@ -116,9 +116,19 @@
 
 - [Minikube安装istio](https://atbug.com/install-istio-on-minikube/)
 
-- [Increase Kubernetes Network Security with Cilium](https://itnext.io/increase-kubernetes-network-security-with-cilium-ba6af15c8f5f)
+- Cilium
 
-- [使用 Cilium 增强 Kubernetes 网络安全](https://atbug.com/enhance-kubernetes-network-security-with-cilium/)
+    - [Increase Kubernetes Network Security with Cilium](https://itnext.io/increase-kubernetes-network-security-with-cilium-ba6af15c8f5f)
+
+    - [使用 Cilium 增强 Kubernetes 网络安全](https://atbug.com/enhance-kubernetes-network-security-with-cilium/)
+
+    - [Kubernetes Multicluster with Kind and Cilium](https://piotrminkowski.com/2021/10/25/kubernetes-multicluster-with-kind-and-cilium/)
+
+    - [倍受关注的 Cilium Service Mesh 到底怎么玩？ - 上手实践](https://zhuanlan.zhihu.com/p/447950573)
+
+    - [k3s使用Cilium替换默认Flannel](https://ysicing.me/posts/how-to-use-cilium-to-replace-k3s-flannel/)
+
+- [搞懂 Kubernetes 准入控制（Admission Controller)](https://zhuanlan.zhihu.com/p/439329022)
 
 - [Kubernetes 的自动伸缩你用对了吗？](https://mp.weixin.qq.com/s/GKS3DJHm4p0Tjtj8nJRGmA)
 
@@ -248,7 +258,6 @@
     - [14: 使用istio实现http服务的JWT身份认证](https://blog.frognew.com/2021/08/learning-istio-1.10-14.html)
 
 - 轻量级 `Kubernetes` 之 `k3s`
-
 
     - [01.简介与安装](https://liumiaocn.blog.csdn.net/article/details/103234225)
 

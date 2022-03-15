@@ -165,11 +165,17 @@
 
     - [JavaScript Cookie](https://github.com/js-cookie/js-cookie)
 
-    - [rush](https://rushjs.io/)
+    - monorepo
 
+        - [Nx](https://nx.dev/)
+
+        - [Rush Stack](https://rushstack.io/)
+    
+        - [Rush](https://rushjs.io/)
+    
+        - [lerna](https://lerna.js.org/)
+    
     - [tsdx](https://github.com/jaredpalmer/tsdx)
-
-    - [Lerna](https://lerna.js.org/)
 
 ## 学习资源
 
